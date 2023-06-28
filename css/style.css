@@ -2,7 +2,7 @@
 body{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
-	color: #999999;
+	color: #b8b5b5;
 }
 h1,h2,h3,h4,h5,h6{
 	font-family: 'Montserrat', sans-serif;
@@ -34,23 +34,23 @@ p{
 	text-transform: uppercase;
 	font-weight: 600;
 	padding:12px 40px;
-	box-shadow: 0px 4px 10px 0px rgba(91, 91, 91, 0.45);
+	box-shadow: 0px 2px 10px 0px rgb(65, 107, 2);
 	line-height: 1;
 	transition: all .5s ease;
-	letter-spacing: 1px;
+	letter-spacing: 2px;
 }
 
 .btn-link{
 	padding:0;
-	box-shadow: none;
+	box-shadow: rgb(65, 107, 2);
 }
-.icon-on-button{
+/* .icon-on-button{
 	margin-left: 8px;
 }
 .icon-on-button i{
 	font-size: 18px;
 	vertical-align: middle;
-}
+} */
 .navbar{
 	background-color: transparent !important;
 	border-color: transparent !important;
@@ -66,7 +66,7 @@ p{
 }
 .navbar-default .navbar-nav>li>a {
     font-family: 'Montserrat', sans-serif;
-    color: #fff;
+    color:rgb(65, 107, 2);
     text-transform: uppercase;
 }
 .navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
@@ -102,7 +102,7 @@ p{
 	display: none;
 }
 .cta{
-	color: #fff;
+	color:rgb(65, 107, 2);
 }
 .cta-btn-group{
 	margin-top: 15px;
@@ -112,22 +112,22 @@ p{
 }
 .btn-orange.focus, .btn-orange:focus,.btn-orange.active, .btn-orange:active {
     color: #fff;
-    background-color: #286090;
+    background-color: #134501;
     border-color: #122b40;
 }
 .btn-white.focus, .btn-white:focus,.btn-white.active, .btn-white:active {
     color: #fff;
     background-color: #286090;
-    border-color: #122b40;
+    border-color: rgb(65, 107, 2);
 }
 .btn-violat.focus, .btn-violat:focus,.btn-violat.active, .btn-violat:active {
     color: #fff;
     background-color: #286090;
-    border-color: #122b40;
+    border-color:rgb(65, 107, 2);
 }
 /*******************************************HEADER***************************************************/
 header{
-	background-color: #b7b7b7;
+	background-color: #2a5802;
 	position: relative;
 	display: block;
 }
@@ -170,7 +170,7 @@ header{
 	padding-bottom: 15px;
 }
 .feature-wiget h4, .feature-wiget i{
-	color: #433b88;
+	color: rgb(65, 107, 2);
 }
 .feature-wiget i{
 	font-size: 36px;
@@ -368,7 +368,7 @@ ul.social-list li a:hover, ul.social-list li a:focus{
 }
 /*******************************************ELEMENT STYLES*******************************************/
 .btn-orange,.btn-violat{
-	color: #fff;
+	color: #0c5805;
 }
 .btn-violat,.gradient-violat {
   background-image: -moz-linear-gradient( 135deg, rgb(244,202,216) 0%, rgb(129,112,137) 35%, rgb(14,21,58) 100%);
@@ -385,7 +385,7 @@ ul.social-list li a:hover, ul.social-list li a:focus{
 .btn-white,.gradient-white{
 	background-image:
     linear-gradient(125deg, #ffffff, #e1e1e1);
-    color: #6b6a8b;
+    color:  #0c5805 ;
 }
 .border-none{
 	border: 0px !important;
@@ -457,15 +457,15 @@ ul.social-list li a:hover, ul.social-list li a:focus{
 }
 .btn-video:hover{
 	text-decoration: none;
-	color: #e86c6c;
+	color: #0c5805;
 }
 .btn-video:hover .icon-rounded{
-  border-color: #e86c6c;
+  border-color: ;
   box-shadow: 0px 8px 27px 0px rgba(116, 44, 69, 0.21);
-  color: #e86c6c;
+  color: #0c5805;
 }
 .btn.gradient-orange:hover{
-	background-color: #e86c6c!important;
+	background-color:#0c5805!important;
 	background-image: none!important;
 }
 .btn-orange.active, .btn-orange:active{
@@ -527,7 +527,7 @@ ul.social-list li a:hover, ul.social-list li a:focus{
 }
 .blog-category{
 	text-transform: uppercase;
-	color: #433b88 !important;
+	color:black !important;
 	font-weight: 600;
 }
 .margin-bottom-80{
