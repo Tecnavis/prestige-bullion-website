@@ -1179,14 +1179,13 @@ footer{
 	background-image: url("/images/gallery/g3.jpg");
   }
   .wrap-effect-3 .item:nth-of-type(4) {
-	background-image: url("/images/gallery/g4.jpg");
+	background-image: url("/images/gallery/g6.jpg");
 }
 .wrap-effect-3 .item:nth-of-type(5) {
-  background-image: url("/images/gallery/g5.jpg");
+  background-image: url("/images/gallery/g4.jpg");
 }
-  }
   .wrap-effect-3 .item:last-of-type {
-	background-image: url("/images/gallery/g6.jpg");
+	background-image: url("/images/gallery/g5.jpg");
   }
  
   @keyframes rotate {
