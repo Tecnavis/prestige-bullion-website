@@ -470,3 +470,31 @@
         
         
 })(jQuery);
+
+// whatapp button //
+// Add an event listener to the form submission
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+	e.preventDefault(); // Prevent the default form submission
+  
+	// Get the form values
+	var name = document.getElementById('name').value;
+	var email = document.getElementById('email').value;
+	var phone = document.getElementById('mobile_code').value;
+	var messageContent = document.getElementById('message').value;
+  
+	// Construct the WhatsApp message
+	var message = "Name: " + name + "\n";
+	message += "Email: " + email+ "\n";
+	message += "Phone Number: " + phone+ "\n";
+	message += "Message: " + messageContent;
+  
+	// Open WhatsApp in a new window or tab with the message
+	window.open("https://wa.me/971503139811?text=" + encodeURIComponent(message));
+  });
+ 
+
+
+  
+
+
+
