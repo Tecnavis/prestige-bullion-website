@@ -300,7 +300,7 @@ html {
 
 body {
     font-weight: normal;
-    line-height: 1;
+    /* line-height: 1; */
     word-wrap: break-word;
     text-rendering: optimizeLegibility;
     -webkit-overflow-scrolling: touch;
@@ -448,8 +448,8 @@ textarea {
 .row .row {
     width: auto;
     max-width: none;
-    margin-left: -20px;
-    margin-right: -20px;
+    /* margin-left: -20px; */
+    /* margin-right: -20px; */
 }
 
 

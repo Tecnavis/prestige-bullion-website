@@ -505,13 +505,13 @@ footer{
 	color: #e8617d;
 }
 .footer-left-content{
-	margin-bottom: 50px;
+	margin-bottom: 2em;
 }
 .footer-left-content .content{
 	margin-top: 15px;
 }
 .footer-list-wiget .list-group{
-	margin-top: 26px;
+	margin-top: 10px;
 }
 .padding-top-120{
 	padding-top: 120px;
@@ -573,10 +573,10 @@ footer{
     background-position: center!important;
 }
 .margin-bottom-30{
-	margin-bottom: 30px;
+	margin-bottom: 3px;
 }
 .margin-top-30{
-	margin-top: 3  0px;
+	margin-top: 1  0px;
 }
 .overflow-x-hidden{
 	overflow-x: hidden;
