@@ -1005,10 +1005,8 @@ footer{
 	max-width: 300px;
 	margin-top: 5px;
 	margin: 5rem auto;
-	border: 1px solid #ffffff22;
-	background-color: #282c34;
-	background: linear-gradient(0deg, #282c34 0%, rgba(17, 0, 32, 0.5) 100%);
-	box-shadow: 10px 10px 10px #00000088;
+	border:none;
+	background-color: transparent;
 	border-radius: 0.7rem;
 	backdrop-filter: blur(7px);
 	-webkit-backdrop-filter: blur(7px);
@@ -1041,8 +1039,9 @@ footer{
 	object-fit: cover;
   }
   .nft .main .description {
+	font-weight: bold;
 	margin: 0.5rem 0;
-	color: #a89ec9;
+	color: #00000088;
   }
   .nft .main .tokenInfo {
 	display: flex;
