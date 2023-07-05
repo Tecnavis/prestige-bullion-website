@@ -220,7 +220,7 @@ p{
     background-color: transparent;
 }
 .navbar-default .navbar-nav>li>a:hover{
-	color: rgb(22, 52, 27);
+	color: goldenrod;
 }
 .navbar-nav>li>a.btn-navbar:hover{
 	color: #fff;
@@ -354,7 +354,8 @@ header{
 }
 /*******************************************TESTIMONIAL**********************************************/
 .heading-wraper{
-	margin-bottom: 120px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 .heading-wraper h3{
 	color: #fff;
@@ -371,7 +372,7 @@ header{
 	box-shadow: 0px 8px 21px 0px rgba(26, 31, 66, 0.29);
 }
 .testimonial-content{
-	padding: 2rem 8rem;
+	padding: 2rem 2rem;
     position: relative;
     top: -45px;
     color: #5a5a5a;
@@ -712,6 +713,7 @@ footer{
     left: calc(100vw - 62px);
     cursor: pointer;
     transition: all .5s ease;
+	z-index: 2;
 }
 .scroll-top-icon-container{
 	position: relative;
@@ -742,6 +744,7 @@ footer{
     left: calc(100vw - 62px);
     cursor: pointer;
     transition: all .5s ease;
+	z-index: 2;
 }
 .whatsapp-icon-container{
 	position: relative;
@@ -1300,3 +1303,41 @@ footer{
   .card101:hover {
 	rotate: 8deg;
   }
+
+
+  .bg-video-wrap {
+	position: relative;
+	overflow: hidden;
+	width: auto;
+	height: 100vh;
+	/* background: url(https://designsupply-web.com/samplecontent/vender/codepen/20181014.png) no-repeat center center/cover; */
+  }
+  video {
+	max-width: auto;
+	max-height: 100vh;
+	z-index: 1;
+  }
+  .overlay {
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: linear-gradient(45deg, rgba(0,0,0,.3) 50%, rgba(0,0,0,.7) 50%);
+	background-size: 3px 3px;
+	z-index: 2;
+  }
+  /* .bg-video-wrap h1 {
+	text-align: center;
+	color: #fff;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: 3;
+	max-width: 400px;
+	width: 100%;
+	height: 50px;
+  } */
