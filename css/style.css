@@ -1239,8 +1239,8 @@ footer{
   .card101 {
 	margin-top: 60px;
 	margin-bottom: 60px;
-	width: 420px;
-	height: 220px;
+	width: 100%;
+	height: auto;
 	padding: 20px;
 	color: white;
 	background: linear-gradient(#212121, #212121) padding-box,
