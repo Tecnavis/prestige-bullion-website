@@ -86,7 +86,7 @@
 			        		<div class="text text-lg-right">
 				            <p><span>Phone:</span> <a href="tel://+971559256000">+971 559256000</a></p>
 							<p><span></span> <a href="tel://+971503139811">+971 503139811</a></p>
-							<p><span></span> <a href="tel://+971505932750">+971 505932750</a></p><br> +971 505932750
+							<p><span></span> <a href="tel://+971505932750">+971 505932750</a></p><br>
 				          </div>
 			          </div>
 					</div>
@@ -130,18 +130,21 @@
 												<div class="form-group">
 													<label class="label" for="name">Full Name</label>
 													<input type="text" class="form-control" name="name" id="name" placeholder="Name" required>
+													<span id="nameAlert" class="alert" ></span>
 												</div>
 											</div>
 											<div class="col-md-6"> 
 												<div class="form-group">
 													<label class="label" for="email">Email Address</label>
-													<input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+													<input type="email" class="form-control" name="email"  id="email" placeholder="Email" required>
+													<span id="emailAlert" class="alert" ></span>
 												</div>
 											</div>
 											<div class="col-md-12">
 												<div class="form-group">
 													<label class="label" for="phone">Phone number</label><br>
-													<input type="number" id="mobile_code" class="form-control" minlength="10" maxlength="10" pattern="[0-9]{10}" required="" placeholder="Phone Number" name="name" required>                   
+													<input type="text" id="mobile_code" class="form-control" maxlength="10" pattern="[0-9]{10}" placeholder="Phone Number"  required>
+													<span id="phoneAlert" class="alert" ></span>                   
 													
 												</div>
 											</div>
@@ -154,7 +157,8 @@
 											</div>
 											<div class="col-md-12">
 												<div class="form-group">
-													<button type="submit" class="btn btn-primary"> Submit</button>
+													
+													<button  type="button" value="Submit via WhatsApp"class="btn btn-primary" onclick="submitToWhatsApp()" > Submit</button>
 											
 												</div>
 											</div>
@@ -280,8 +284,34 @@
             utilsScript:
               "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
           });
-        </script>
+		  
 
+
+
+        </script>
+		<style>
+			.alert {
+			  color: #ee2a4c;
+			}
+			</style>
+			<script>
+				function validateEmail(event) {
+				  event.preventDefault(); // Prevent form submission
+				  
+				  var emailInput = document.getElementById('email');
+				  var email = emailInput.value;
+				  
+				  if (!emailInput.checkValidity()) {
+					alert('Please enter a valid email address.');
+					emailInput.focus();
+					return;
+				  }
+				  
+				  // Proceed with form submission or other actions
+				  alert('Valid email: ' + email);
+				  // You can perform additional actions or submit the form here
+				}
+				</script>
 	</body>
 </html>
 
