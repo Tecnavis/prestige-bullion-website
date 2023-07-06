@@ -473,24 +473,48 @@
 
 // whatapp button //
 // Add an event listener to the form submission
-document.getElementById('contactForm').addEventListener('submit', function(e) {
-	e.preventDefault(); // Prevent the default form submission
-  
-	// Get the form values
-	var name = document.getElementById('name').value;
-	var email = document.getElementById('email').value;
+
+
+  function submitToWhatsApp() {
+    
+    
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
 	var phone = document.getElementById('mobile_code').value;
-	var messageContent = document.getElementById('message').value;
+    var messageContent = document.getElementById('message').value;
+   // Check if the fields are empty
+  if (name === '') {
+    document.getElementById('nameAlert').textContent = 'Please enter your Name.';
+    return;
+  }
   
-	// Construct the WhatsApp message
-	var message = "Name: " + name + "\n";
-	message += "Email: " + email+ "\n";
-	message += "Phone Number: " + phone+ "\n";
-	message += "Message: " + messageContent;
+  if (email === '') {
+    document.getElementById('emailAlert').textContent = 'Please enter your Email';
+    return;
+  }
+  if (phone === '') {
+    document.getElementById('phoneAlert').textContent = 'Please enter your Phone Number';
+    return;
+  }
   
-	// Open WhatsApp in a new window or tab with the message
-	window.open("https://wa.me/971503139811?text=" + encodeURIComponent(message));
-  });
+  // Clear any existing alerts
+  document.getElementById('phoneAlert').textContent = '';
+  document.getElementById('nameAlert').textContent = '';
+  document.getElementById('emailAlert').textContent = '';
+
+    // Format the message with the form data
+    var formattedMessage = "Name: " + name + "\n"
+	+ "Email: " + email+ "\n"
+	+ "Phone Number: " + phone+ "\n"
+	+"Message: " + messageContent;
+    // Create the WhatsApp URL
+    var whatsappURL = "https://wa.me/971503139811?text=" + encodeURIComponent(formattedMessage);
+    
+    // Open WhatsApp in a new tab
+    window.open(whatsappURL);
+  }
+
+  
  
 
 
