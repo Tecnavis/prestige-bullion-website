@@ -1001,9 +1001,6 @@ footer{
 
   /* --------------------nft------------ */
   .nft {
-	display: flex;
-	justify-content: center;
-	user-select: none;
 	max-width: 260px;
 	min-height: 350px;
 	margin: 5px;
@@ -1029,8 +1026,6 @@ footer{
 	text-decoration: none;
   }
   .nft .main {
-	display: flex;
-	justify-content: center;
 	flex-direction: column;
 	width: 90%;
 	padding: 1rem;
