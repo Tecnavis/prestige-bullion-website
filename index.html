@@ -92,8 +92,12 @@
         </div>
       </div> -->
       <div class="bg-video-wrap">
-        <video src="./videos/leens golds crop.mp4" loop muted autoplay preload="yes">
-        </video>
+        
+        <video id="video-tag" autoplay muted loop playsinline> 
+          <source src="./videos/leens golds crop.mp4" type="video/mp4" />  
+      </video>
+      <img id="img-tag" src="./videos/leens golds crop.mp4">
+      
         <!-- <div class="overlay">
         </div> -->
         <!-- <h1>Fullscreen video background
@@ -635,7 +639,20 @@
      </a>
     </div>
 
-
+    <script type="text/javascript">
+      function BrowserDetection() {
+  
+      //Check if browser is Safari, if it is, hide the <video> tag, otherwise hide the <img> tag
+      if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
+          document.getElementById('video-tag').style.display= "none";
+      } else {
+          document.getElementById('img-tag').style.display= "none";
+      }               
+  
+      //And run the script. Note that the script tag needs to be run after HTML so where you place it is important. 
+      BrowserDetection();
+  </script>
+  
 
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
