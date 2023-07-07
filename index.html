@@ -91,9 +91,13 @@
           </div>
         </div>
       </div> -->
-      <div class="bg-video-wrap">
-        <video src="./videos/leens golds crop.mp4" loop muted autoplay >
-        </video>
+      
+        <div class="video-responsive">
+          <video class="video" muted="muted" loop autoplay>
+            <source src="./videos/leens golds crop.mp4" type="video/mp4">
+            Your browser does not support HTML5 video. </video>
+          <canvas class="canvas"></canvas>
+        </div>
         
         <!-- <div class="overlay">
         </div> -->
@@ -636,7 +640,55 @@
      </a>
     </div>
 
-
+    <script src="canvas-video-player.js"></script> 
+    <script>
+      
+      var isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
+      
+      if (isIOS) {
+     
+        var canvasVideo = new CanvasVideoPlayer({
+          videoSelector: '.video',
+          canvasSelector: '.canvas',
+          timelineSelector: false,
+          autoplay: true,
+          makeLoop: true,
+          pauseOnClick: false,
+          audio: false
+        });
+        
+      } else {
+        
+        // Use HTML5 video
+        document.querySelectorAll('.canvas')[0].style.display = 'none';
+        
+      }  
+      
+      </script>"></script> 
+    <script>
+      
+      var isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
+      
+      if (isIOS) {
+     
+        var canvasVideo = new CanvasVideoPlayer({
+          videoSelector: '.video',
+          canvasSelector: '.canvas',
+          timelineSelector: false,
+          autoplay: true,
+          makeLoop: true,
+          pauseOnClick: false,
+          audio: false
+        });
+        
+      } else {
+        
+        // Use HTML5 video
+        document.querySelectorAll('.canvas')[0].style.display = 'none';
+        
+      }  
+      
+      </script>
 
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
