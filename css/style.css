@@ -611,7 +611,6 @@ footer{
 	color: #0c5805;
 }
 .btn-video:hover .icon-rounded{
-  border-color: ;
   box-shadow: 0px 8px 27px 0px rgba(116, 44, 69, 0.21);
   color: #0c5805;
 }
@@ -808,8 +807,8 @@ footer{
 	}
 	.navbar{
 	    background-image: -webkit-linear-gradient( 305deg, rgb(24, 24, 27) 0%, rgb(38, 81, 45) 35%, rgb(22, 52, 27) 100%);
-	    background-image: -o-linear-gradient( 305deg, rgb(24, 24, 27) 0%, rgb(38, 81, 45) 35%, rgb(22, 52, 27) 100%));
-	    background-image: linear-gradient( 305deg, rgb(24, 24, 27) 0%, rgb(38, 81, 45) 35%, rgb(22, 52, 27) 100%));
+	    background-image: -o-linear-gradient( 305deg, rgb(24, 24, 27) 0%, rgb(38, 81, 45) 35%, rgb(22, 52, 27) 100%);
+	    background-image: linear-gradient( 305deg, rgb(24, 24, 27) 0%, rgb(38, 81, 45) 35%, rgb(22, 52, 27) 100%);
 	}
 	.navbar-divider{
 		display: none;
