@@ -69,14 +69,14 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav  navbar-right">
-                <li class="active"><a href="../index.html#home">Home <span class="sr-only">(current)</span></a></li>
-                <li><a href="../index.html#advertisers">About</a></li>
-                <li><a href="https://www.leengold.bullionview.com/"
+                <li class="active"><a onclick="changeURL('Home')" href="../index.html#home">Home <span class="sr-only">(current)</span></a></li>
+                <li><a onclick="changeURL('About')" href="../index.html#About">About</a></li>
+                <li><a onclick="changeURL('PLive Rate')"  href="https://www.leengold.bullionview.com/"
                     class="btn btn-orange border-none btn-rounded-corner btn-navbar">LIVE RATE<span
                       class="icon-on-button"></span></a></li>
-                <li><a href="../index.html#testimonial">Products</a></li>
-                <li><a href="../index.html#services2">services</a></li>
-                <li><a href="../contact-page.html">Contact</a></li>
+                <li><a onclick="changeURL('Products')" href="../index.html#Products">Products</a></li>
+                <li><a onclick="changeURL('Services')" href="../index.html#Service">services</a></li>
+                <li><a onclick="changeURL('Contact')" href="../contact-page.html">Contact</a></li>
               </ul>
             </div><!-- /.navbar-collapse -->
     
@@ -291,9 +291,9 @@ transparent and efficient selling process allows for a seamless transition from 
             <div class="footer-list-wiget">
               <h4 style="margin-bottom: 5px;">Important links</h4>
               <div class="list-group">
-                <a href="https://www.leengold.bullionview.com/" class="list-group-item">Live rates</a>
-                <a href="#" class="list-group-item">Privacy Policy</a>
-                <a href="#" class="list-group-item">Terms & Condition</a>
+                <a onclick="changeURL('Live Rate')" href="https://www.leengold.bullionview.com/" class="list-group-item">Live rates</a>
+                <a onclick="changeURL('Privacy Policy')"href="#" class="list-group-item">Privacy Policy</a>
+                <a onclick="changeURL('Terms & Conditions')"href="#" class="list-group-item">Terms & Condition</a>
               </div>
             </div>
           </div>
@@ -302,9 +302,9 @@ transparent and efficient selling process allows for a seamless transition from 
               <h4 style="margin-bottom: 5px;">Important links</h4>
               <div class="list-group">
 
-                <a href="../index.html#advertisers" class="list-group-item">About Us</a>
-                <a href="../index.html#services2" class="list-group-item">services</a>
-                <a href="../contact-page.html" class="list-group-item">Contact Us</a>
+                <a onclick="changeURL('About')" href="../index.html#About" class="list-group-item">About Us</a>
+                <a onclick="changeURL('Service')" href="../index.html#Service" class="list-group-item">services</a>
+                <a onclick="changeURL('Contact')" href="../contact-page.html" class="list-group-item">Contact Us</a>
               </div>
             </div>
           </div>
@@ -366,7 +366,11 @@ transparent and efficient selling process allows for a seamless transition from 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
   
-
+    <script>
+      function changeURL(sectionName) {
+        window.history.pushState({}, "", "#" + sectionName);
+      }
+    </script>
         
 
     <!-----strting BUYING AND SELLING PROCESS-->

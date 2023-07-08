@@ -37,11 +37,11 @@
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav  navbar-right">
               <li class="active"><a href="#home">Home <span class="sr-only">(current)</span></a></li>
-              <li><a href="#services">About</a></li>
-              <li><a href="https://www.leengold.bullionview.com/" class="btn btn-orange border-none btn-rounded-corner btn-navbar">LIVE RATE<span class="icon-on-button"></span></a></li>
-              <li><a href="#testimonial">Products</a></li>
-              <li><a href="#services2">services</a></li>
-              <li><a href="./contact-page.html">Contact</a></li>
+              <li><a onclick="changeURL('About')" href="#About">About</a></li>
+              <li><a onclick="changeURL('Live rate')" href="https://www.leengold.bullionview.com/" class="btn btn-orange border-none btn-rounded-corner btn-navbar">LIVE RATE<span class="icon-on-button"></span></a></li>
+              <li><a onclick="changeURL('Product')" href="#Products">Products</a></li>
+              <li><a onclick="changeURL('Service')" href="#Service">services</a></li>
+              <li><a onclick="changeURL('Contact')" href="./contact-page.html">Contact</a></li>
             </ul>
           </div><!-- /.navbar-collapse -->
           
@@ -207,7 +207,7 @@
 
    <!-- ----------------------------------------------------about us------------------------------------------------------- -->
     
-    <section id="advertisers" class="advertisers-service-sec padding-top-bottom-120">
+    <section id="About" class="advertisers-service-sec padding-top-bottom-120">
       <div class="container">
         <div class="row">
           <div class="section-header text-center">
@@ -295,7 +295,7 @@
 
     <!-- ----------------------------------------products------------------------------------------- -->
 
-    <section id="testimonial" >
+    <section id="Products" >
       <div class="container padding-top-bottom-90 text-center">
         <div class="heading-wraper text-center">
           <h3 style="color: rgb(31, 68, 37);">products</h3>
@@ -419,7 +419,7 @@
     <!-- -----------------------------------services---------------------------------------------------------- -->
 
 
-<section id="services2" style="background-color: #fff;">
+<section id="Service" style="background-color: #fff;">
   <div class="container">
   <div class="col-md-12 col-sm-12">
     <h2 class="text-center">services</h2>
@@ -565,9 +565,9 @@
 		  <div class="footer-list-wiget">
 			<h4>Important links</h4>
 			<div class="list-group">
-			  <a href="https://www.leengold.bullionview.com/" class="list-group-item">Live rates</a>
-			  <a href="#" class="list-group-item">Privacy Policy</a>
-			  <a href="#" class="list-group-item">Terms & Condition</a>
+			  <a onclick="changeURL('Live rate')" href="https://www.leengold.bullionview.com/" class="list-group-item">Live rates</a>
+			  <a onclick="changeURL('Privacy Policy')" href="#" class="list-group-item">Privacy Policy</a>
+			  <a onclick="changeURL('Terms & Conditions')" href="#" class="list-group-item">Terms & Condition</a>
 			</div>
 		  </div>
 		</div>
@@ -576,9 +576,9 @@
 			<h4>Important links</h4>
 			<div class="list-group">
 			  
-			  <a href="#advertisers" class="list-group-item">About Us</a>
-			  <a href="#services2" class="list-group-item">services</a>
-			  <a href="./contact-page.html" class="list-group-item">Contact Us</a>
+			  <a onclick="changeURL('About')" href="#About" class="list-group-item">About Us</a>
+			  <a onclick="changeURL('Service')" href="#Service" class="list-group-item">services</a>
+			  <a onclick="changeURL('Contact')" href="./contact-page.html" class="list-group-item">Contact Us</a>
 			</div>
 		  </div>
 		</div>
@@ -663,7 +663,12 @@
       }  
       
       </script>
-
+      
+      <script>
+        function changeURL(sectionName) {
+          window.history.pushState({}, "", "#" + sectionName);
+        }
+      </script>
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="js/jquery.min.js"></script>
