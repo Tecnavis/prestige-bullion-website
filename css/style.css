@@ -1404,13 +1404,14 @@ footer{
 	height: 225px;
 	background: #313131;
 	border-radius: 20px;
-	;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	color: white;
 	transition: 0.2s ease-in-out;
+	margin-top: 60px;
+	margin-bottom: 60px;
   }
   
   .card555 lord-icon {
