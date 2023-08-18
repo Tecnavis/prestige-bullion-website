@@ -1411,8 +1411,8 @@ footer{
 	justify-content: center;
 	color: white;
 	transition: 0.2s ease-in-out;
-	margin-top: 60px !important;
-	margin-bottom: 60px !important;
+	margin-top: 60px;
+	margin-bottom: 60px;
   }
   
   .card555 lord-icon {
@@ -1748,8 +1748,3 @@ footer{
 		  background-position: 1rem 0; }
 		to {
 		  background-position: 0 0; } }
-
-.copyright-cta{
-	padding-left: 10px;
-	
-}
