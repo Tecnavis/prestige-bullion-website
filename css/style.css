@@ -1405,7 +1405,7 @@ footer{
 	margin-top: 60px;
 	margin-bottom: 60px;
 	width: 100%;
-	height: auto;
+	height: 220px;
 	padding: 20px;
 	background: #313131;
 	border-radius: 20px;
@@ -1497,7 +1497,9 @@ footer{
     background: #46b5d1 !important; }
   
   .ftco-section {
-    padding: 7em 0; }
+    padding: 0; 
+	height: auto;
+}
   
   .ftco-no-pt {
     padding-top: 0; }
@@ -1545,7 +1547,9 @@ footer{
   
   @media (max-width: 767.98px) {
     .info-wrap {
-      height: 400px; } }
+      height: 400px; 
+		padding-bottom: 20px;
+	} }
   
   .dbox {
     width: 100%;
@@ -1751,3 +1755,7 @@ footer{
 		  background-position: 1rem 0; }
 		to {
 		  background-position: 0 0; } }
+
+.copyright-cta{
+	padding-left: 15px;
+}
