@@ -582,7 +582,7 @@
 												<div class="form-group">
 													<label class="label" for="phone">Phone number</label><br>
 													<input type="text" id="mobile_code" class="form-control" maxlength="10" pattern="[0-9]{10}" placeholder="Phone Number"  required>
-													<!-- <span id="phoneAlert" class="alert" ></span>                    -->
+													<span id="phoneAlert" class="alert" ></span>                   
 													
 												</div>
 											</div>
@@ -825,6 +825,46 @@
       alert('Valid email: ' + email);
       // You can perform additional actions or submit the form here
     }
+    </script>
+    <script>
+      function submitToWhatsApp() {
+    
+    
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+	var phone = document.getElementById('mobile_code').value;
+    var messageContent = document.getElementById('message').value;
+   // Check if the fields are empty
+  if (name === '') {
+    document.getElementById('nameAlert').textContent = 'Please enter your Name.';
+    return;
+  }
+  
+  if (email === '') {
+    document.getElementById('emailAlert').textContent = 'Please enter your Email';
+    return;
+  }
+  if (phone === '') {
+    document.getElementById('phoneAlert').textContent = 'Please enter your Phone Number';
+    return;
+  }
+  
+  // Clear any existing alerts
+  document.getElementById('phoneAlert').textContent = '';
+  document.getElementById('nameAlert').textContent = '';
+  document.getElementById('emailAlert').textContent = '';
+
+    // Format the message with the form data
+    var formattedMessage = "Name: " + name + "\n"
+	+ "Email: " + email+ "\n"
+	+ "Phone Number: " + phone+ "\n"
+	+"Message: " + messageContent;
+    // Create the WhatsApp URL
+    var whatsappURL = "https://wa.me/971503139811?text=" + encodeURIComponent(formattedMessage);
+    
+    // Open WhatsApp in a new tab
+    window.open(whatsappURL);
+  }
     </script>
   </body>
 </html>
