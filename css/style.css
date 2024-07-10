@@ -212,7 +212,7 @@ p{
 }
 .navbar-default .navbar-nav>li>a {
     font-family: 'Montserrat', sans-serif;
-    color:rgb(65, 107, 2);
+    color:rgb(14, 3, 78);
     text-transform: uppercase;
 }
 .navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
@@ -248,7 +248,7 @@ p{
 	display: none;
 }
 .cta{
-	color:rgb(65, 107, 2);
+	color:rgb(14, 3, 78);
 }
 .cta-btn-group{
 	margin-top: 15px;
@@ -318,7 +318,7 @@ header{
 	padding-bottom: 15px;
 }
 .feature-wiget h4, .feature-wiget i{
-	color: rgb(65, 107, 2);
+	color:rgb(14, 3, 78);
 }
 .feature-wiget i{
 	font-size: 36px;
@@ -523,9 +523,9 @@ footer{
 	color: 316341b;
 }
 .btn-violat,.gradient-violat {
-  background-image: -moz-linear-gradient( 135deg, rgb(24, 24, 27) 0%, rgb(38, 81, 45) 35%, rgb(22, 52, 27) 100%);
-  background-image: -webkit-linear-gradient( 135deg, rgb(24, 24, 27) 0%, rgb(38, 81, 45) 35%, rgb(22, 52, 27) 100%);
-  background-image: -ms-linear-gradient( 135deg, rgb(24, 24, 27) 0%, rgb(38, 81, 45) 35%, rgb(22, 52, 27) 100%);
+  background-image: -moz-linear-gradient( 135deg, rgb(24, 24, 27) 0%, rgb(14, 3, 78), rgb(6, 8, 97) 100%);
+  background-image: -webkit-linear-gradient( 135deg, rgb(24, 24, 27) 0%,rgb(14, 3, 78) 35%, rgb(8, 8, 94) 100%);
+  background-image: -ms-linear-gradient( 135deg, rgb(24, 24, 27) 0%,rgb(14, 3, 78) 35%, rgb(3, 8, 82) 100%);
 }
 .btn-orange,.gradient-orange {
   background-image: -webkit-linear-gradient(35deg, rgb(232,88,137) 0%, rgb(238, 43, 77) 32%, rgb(167, 27, 64) 100%);
@@ -609,14 +609,14 @@ footer{
 }
 .btn-video:hover{
 	text-decoration: none;
-	color: #0c5805;
+	color: #0a023a;
 }
 .btn-video:hover .icon-rounded{
   box-shadow: 0px 8px 27px 0px rgba(116, 44, 69, 0.21);
-  color: #0c5805;
+  color: #0e0343;
 }
 .btn.gradient-orange:hover{
-	background-color:#0c5805!important;
+	background-color:#100248!important;
 	background-image: none!important;
 }
 .btn-orange.active, .btn-orange:active{
@@ -807,9 +807,9 @@ footer{
 		padding: 2rem;
 	}
 	.navbar{
-	    background-image: -webkit-linear-gradient( 305deg, rgb(24, 24, 27) 0%, rgb(38, 81, 45) 35%, rgb(22, 52, 27) 100%);
-	    background-image: -o-linear-gradient( 305deg, rgb(24, 24, 27) 0%, rgb(38, 81, 45) 35%, rgb(22, 52, 27) 100%);
-	    background-image: linear-gradient( 305deg, rgb(24, 24, 27) 0%, rgb(38, 81, 45) 35%, rgb(22, 52, 27) 100%);
+	    background-image: -webkit-linear-gradient( 305deg, rgb(24, 24, 27) 0%,rgb(14, 3, 78) 35%, rgb(9, 4, 51) 100%);
+	    background-image: -o-linear-gradient( 305deg, rgb(24, 24, 27) 0%,rgb(14, 3, 78), rgb(7, 8, 79) 100%);
+	    background-image: linear-gradient( 305deg, rgb(24, 24, 27) 0%,rgb(14, 3, 78)35%, rgb(6, 10, 64) 100%);
 	}
 	.navbar-divider{
 		display: none;
@@ -906,7 +906,7 @@ footer{
   }
   
   .advertisers-service-sec span {
-	color: rgb(31, 68, 37);
+	color:rgb(14, 3, 78);
   }
   
   .advertisers-service-sec .col {
@@ -933,7 +933,7 @@ footer{
 	content: "";
 	width: 100%;
 	height: 100%;
-	background: linear-gradient(#ffffff, rgb(31, 68, 37));
+	background: linear-gradient(#ffffff, rgb(14, 3, 78));
 	position: absolute;
 	left: 0%;
 	top: -98%;
@@ -979,11 +979,11 @@ footer{
   
   .service-card .icon-wrapper {
 	background-color: #ffffff;
-	color: rgb(31, 68, 37);
+	color: rgb(14, 3, 78);
   }
   
   .advertisers-service-sec .service-card:hover .icon-wrapper {
-	color: rgb(31, 68, 37);
+	color: rgb(14, 3, 78);
   }
   
   .advertisers-service-sec .service-card:hover h3 {
@@ -1639,7 +1639,7 @@ footer{
     color: red; }
   
   #form-message-success {
-    color: #28a745;
+    color: #070444;
     font-size: 18px;
     font-weight: 500; }
   
